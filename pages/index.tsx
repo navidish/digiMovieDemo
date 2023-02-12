@@ -1,8 +1,7 @@
-
+import { getFeaturedArticles } from "../dummy-data";
+import ArticleList from "../components/Articles/article-list";
 export default function Home() {
-  return (
-  <>
-  <h1>top 250 movies</h1>
-    </>
-  )
+  const featuredArticles = getFeaturedArticles();
+
+  return <ArticleList items={featuredArticles} />;
 }
